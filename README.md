@@ -1,7 +1,6 @@
 [![npm version](https://img.shields.io/npm/v/forge-readme)](https://www.npmjs.com/package/forge-readme)
 [![license](https://img.shields.io/npm/l/forge-readme)](https://www.npmjs.com/package/forge-readme)
 [![node version](https://img.shields.io/node/v/forge-readme)](https://nodejs.org)
-[![npm downloads](https://img.shields.io/npm/dm/forge-readme)](https://www.npmjs.com/package/forge-readme)
 [![build status](https://img.shields.io/github/actions/workflow/status/RamThokane/npm-readme-forge/ci.yml?branch=main)](https://github.com/RamThokane/npm-readme-forge/actions)
 
 # ✨ README Forge
@@ -274,6 +273,3 @@ This project is licensed under the **MIT** license. See the [LICENSE](LICENSE) f
 
 ---
 
-<p align="center">
-  Built with ❤️ by <a href="https://github.com/RamThokane">Ram Thokane</a>
-</p>
