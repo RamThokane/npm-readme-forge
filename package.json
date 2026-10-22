@@ -1,0 +1,79 @@
+{
+  "name": "forge-readme",
+  "version": "1.0.0",
+  "description": "Auto-generate professional README.md files by analyzing your project",
+  "type": "module",
+  "bin": {
+    "forge-readme": "dist/cli/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "rimraf dist && tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "markdown",
+    "cli",
+    "documentation",
+    "npm",
+    "readme-generator",
+    "project-documentation",
+    "auto-readme",
+    "developer-tools"
+  ],
+  "author": "Ram Thokane <thokaneram@gmail.com> (https://github.com/RamThokane)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamThokane/npm-readme-forge.git"
+  },
+  "homepage": "https://github.com/RamThokane/npm-readme-forge#readme",
+  "bugs": {
+    "url": "https://github.com/RamThokane/npm-readme-forge/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "ora": "^8.2.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@vitest/coverage-v8": "^4.1.0",
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.0",
+    "rimraf": "^6.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.30.0",
+    "vitest": "^4.1.0"
+  }
+}

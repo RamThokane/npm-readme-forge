@@ -1,0 +1,23 @@
+# Source
+src/
+tests/
+
+# Config
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+eslint.config.js
+.prettierrc
+.gitignore
+.github/
+
+# Dev
+coverage/
+node_modules/
+*.log
+
+# Misc
+.vscode/
+.idea/
+.DS_Store
+CONTRIBUTING.md
